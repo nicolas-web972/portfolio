@@ -15,15 +15,15 @@
     <header>
         <nav>
              <div class="logo">
-                <h1>Mon Portfolio</h1>
+            <h1>Mon Portfolio</h1>
              </div>
-             <input type="checkbox" id="click">
+            <input type="checkbox" id="click">
              <label for="click" class="menu-btn">
                 <i class="fas fa-bars"></i>
              </label>
              <ul>
-                <li><a class="active" href="#projet-section">PROJETS</a></li>
-                <li><a href="#etudes">ETUDES</a></li>
+                <li><a class="active" href="#projet">PROJETS</a></li>
+                <li><a href="#studies">ETUDES</a></li>
                 <li><a href="#articles">ARTICLES</a></li>
                 <li><a href="#contact">CONTACT</a></li>
              </ul>
@@ -32,19 +32,25 @@
         <div class="bandeau">
             <h2>Nicolas CHALONO</h2>
             <img class="fullscreen" src="/img/bandeau.jpg" alt="bandeau"/>
-            <section class="ruban">
+            <div class="icon">
+                <a href="#project">
+                <div class="scroll-down"></div>
+                </a>
+            </div>
+            <section class="ruban"> 
                 <div class="scroll text1">
                     <div>
                          MON <span>PORTFOLIO - </span>DEVELOPER <span> FULLSTACK  - </span>DEVELOPER <span>FULLSTACK - </span>DEVELOPER<span> FULLSTACK - </span>DEVELOPER  <span>
                             FULLSTACK - </span>DEVELOPER <span>FULLSTACK - </span>
                     </div>
+                </div>
             </section>
-        </div>
+        
         </div>
 
     </header>
     <main>
-        <section class="container"> 
+        <section class="container" id="project"> 
             <h3>PROJETS REALISÉS</h3>
                <div class = "projecty">
                     <div class="project-1">
@@ -69,24 +75,24 @@
                     </div>
                 </div>
         </section>
-            <br> 
+        <br> 
         
-        <section class="studies">
+        <section class="studies" id="studies"> 
                 <div class="container">
                     <h3>ÉTUDES</h3>
                     <div class="row1">
-                      <div class="avatar">
-                        <img src="/img/AvatarMaker.png" class="card-img" alt="img1">
-                      </div>
+                        <div class="avatar">
+                            <img src="/img/AvatarMaker.png" class="card-img" alt="avatar"/>
+                        </div> <br>
                       
-                      <div class="list">
-                        <ul>
-                            <li>Nicolas</li>
-                            <li>CHALONO</li>
-                            <li>27 ans</li>
-                            <li>nicolas.chalono@gmail.com</li>
-                            <li>+596 696 03 87 37</li>
-                        </ul>
+                        <div class="list">
+                            <ul>
+                                <li>Nicolas</li>
+                                <li>CHALONO</li>
+                                <li>27 ans</li>
+                                <li>Developpeur Junior</li>
+                                <li>HTML - CSS - JAVASCRIPT</li>
+                            </ul>
                         </div>
                     </div>
                     
@@ -96,11 +102,10 @@
                       <div class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia commodi rem in odit cumque ipsam autem architecto saepe maxime dignissimos iste, animi dolores delectus qui doloribus soluta tempore beatae.</div>
                     </div>
                   </div>
-              </div>
         </section>  
         
             <br> 
-        <section class="container">
+        <section class="container" id="articles">
             <h3>ARTICLES</h3>
             <div class="row">
                 <div class="col-sm-6">
@@ -108,7 +113,7 @@
                     <img src="/img/article1.jpg" class="card-img-top" alt="img1">
                     <div class="card-body">
                       <h5 class="card-title">Responsive Design</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                       <a href="#" class="btn btn-primary">Voir plus</a>
                     </div>
                   </div>
@@ -118,7 +123,7 @@
                     <div class="card-body">
                       <img src="/img/article2.jpg" class="card-img-top" alt="img1">
                       <h5 class="card-title">HTML 5</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                       <a href="#" class="btn btn-primary">Voir plus</a>
                     </div>
                   </div>
@@ -130,35 +135,42 @@
         <section id="contact">
             <div class="container">
                 <h3>CONTACT</h3>
-            <div class="form">
-                <form action="#">
-                <div class="up_down">
-                    <label for="name">Nom et Prénom</label>
-                    <input type="text" name="name" id="name"><br>
-                </div>
-                <div class="up_down">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email"><br>
-                </div>
-                <div class="up_down">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="6" cols="10"></textarea><br>
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Envoyer">
+                <div class="form">
+                    <form action="#">
+                    <div class="up_down">
+                        <label for="name">Nom et Prénom</label>
+                        <input type="text" name="name" id="name"><br>
+                    </div>
+                    <div class="up_down">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email"><br>
+                    </div>
+                    <div class="up_down">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="6" cols="10"></textarea><br>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                    </form>
                 </div>
             </div>
-            </div>
-            </form>
         </section>
     </main>
 
     <footer>
         <div class=footer-one>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
             <a href="#" title="landingpage" class="footer-two">A propos</a> 
+            <div class="copy">
             <p>Copyright © 2021 monportfolio.com</p>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>
